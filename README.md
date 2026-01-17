@@ -97,3 +97,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 > [!TIP]
 > This project was developed as a "Vibe Coding" experiment using **Antigravity**.
+# ai\_for\_today
+
+# A vibe coding experimental project (antigravity)
+
+hello
+
