@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./app/backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app/backend:/app
+      - ./app/uploads:/app/uploads
+    environment:
+      - SQLALCHEMY_DATABASE_URL=sqlite:///./sql_app.db
+
+  frontend:
+    build: ./app/frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
